@@ -53,7 +53,7 @@
             <h2 class="title">Sobre mim</h2>
             <div class="about-content">
                 <div class="column left">
-                    <img src="images/foto.jpg" alt="">
+                    <img src="/images/foto.jpg" alt="">
                 </div>
                 <div class="column right">
                     <div class="text">Somos a Help Memory e nos somos um <br><span class="typing-2"></span></div>
@@ -148,21 +148,21 @@
             <div class="carousel owl-carousel">
                 <div class="card">
                     <div class="box">
-                        <img src="images/foto1.jfif" alt="">
+                        <img src="/images/foto1.jfif" alt="">
                         <div class="text">Documentador</div>
                         <p>José Nataniel da Silva</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/foto2.jpg" alt="">
+                        <img src="/images/foto2.jpg" alt="">
                         <div class="text">Banco de Dados</div>
                         <p>Pedro Henrique Lesbrão</p>
                     </div>
                 </div>
                 <div class="card">
                     <div class="box">
-                        <img src="images/foto3.jfif" alt="">
+                        <img src="/images/foto3.jfif" alt="">
                         <div class="text">Progamador</div>
                         <p>Ricardo Prado</p>
                     </div>
