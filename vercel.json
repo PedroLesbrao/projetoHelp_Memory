@@ -5,16 +5,10 @@
     }
   },
   "routes": [
+    { "handle": "filesystem" },
+
     {
-      "src": "/(.*)\\.(js|css|png|jpg|jpeg|gif)",
-      "dest": "/public/$1.$2"
-    },
-    {
-      "src": "/api/(.*)\\.php",
-      "dest": "/api/$1.php"
-    },
-    {
-      "src": "/(.*)",
+      "src": "/.*",
       "dest": "/api/index.php"
     }
   ]
