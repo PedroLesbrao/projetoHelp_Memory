@@ -1,0 +1,56 @@
+#tudo{
+    font-size: 20px;
+    font-family:Garamond,Arial, sans-serif;
+    text-align: center;
+    margin-top: 10px;
+    border: 2px solid ;
+    padding: 30px;
+}
+fieldset{
+    padding: 30px;
+}
+select{
+    margin-right: 170px ;
+}
+#finalizar{
+    width: 85px;
+    height: 35px;
+    margin-left: 127px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#genero2{
+    margin-right: 102px;
+}
+input{
+    margin-top: 5px;
+}
+.titulos{
+    /* margin-right: 0px; */
+    text-align: center;
+}
+#data{
+    /* margin-right: 8%; */
+    text-align: center;
+}
+#sobre{
+    text-align: center;
+}
+#base{
+    font-family:Garamond,Arial, sans-serif;
+    text-align: center;
+}
+fieldset{
+    text-align: -webkit-center;
+    background-color: rgba(74, 115, 139, 0.274);
+
+}
+body{
+    background-size: cover;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-right: 30%;
+    margin-top: 10%;
+    margin-left: 30%;
+    background-color: rgba(74, 115, 139, 0.452);
+}

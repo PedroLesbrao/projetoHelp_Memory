@@ -1,0 +1,38 @@
+  
+    .header-2 {
+        background-color: #ffffff;
+        width: 980px;
+        margin: 0 auto;
+        padding: 16px;
+        }
+        
+        .menucima ul li {
+            display: inline-block;
+            color: #ffffff;
+            margin-left: 15px;
+            height: 50px;
+        }
+        
+        .menucima ul li:hover {
+            border-bottom: 3px solid #1707f8;
+        }
+        
+        .menucima ul li a:hover {
+            color: #1a0cb4bb;
+            
+        }
+        
+        .menucima ul li a {
+            color: #070606;
+            text-decoration: none;
+            font-size: 18px;
+            text-transform: uppercase;
+        }
+        .menucima {
+        width: 70%;
+        text-align: center;
+        }
+
+
+
+       

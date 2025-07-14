@@ -1,0 +1,63 @@
+#foto{
+    width:  300px;
+    height: 300px;
+    border-radius: 30px ;
+    border: 3px solid;
+
+}
+#nome{
+    font-family:Garamond;
+    font-size: 35px;
+    color: black;
+    
+}
+fieldset{
+    border: 2px solid;
+}
+.btn{
+    font-size: 25px;
+    padding: 10px;
+    font-family: Garamond;
+    color: black;
+    background-color:   rgba(74, 115, 139, 0.274);
+    border: 2px solid;
+    border-radius: 10px;
+    /* width: 260px; */
+    margin-left: 15px;
+    height: 45px;
+    text-decoration: none ;
+}
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* background-size: cover; */
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgba(74, 115, 139, 0.452);    
+}
+#pesquisar{
+    margin:20px;
+    margin-top: 40px;
+}
+#pesqui{
+    width: 150px;
+    height: 27px;
+}
+#botaoPesq{
+   height: 32px;
+}
+/* main{
+    background-color: rgba(74, 115, 139, 0.452);
+} */
+/* form{
+    background-color: rgba(74, 115, 139, 0.452);
+} */
+/* .header-2{
+    color: rgba(74, 115, 139, 0.452);
+} */
+fieldset{
+    background-color: rgba(74, 115, 139, 0.452);
+}
