@@ -230,6 +230,6 @@
     </section>
     <!-- footer section start -->
 
-    <script src="js/inicial.js"></script>
+    <script src="/js/inicial.js"></script>
 </body>
 </html>
