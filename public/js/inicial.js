@@ -1,3 +1,4 @@
+console.log('🚀 inicial.js carregado e em execução');
 $(document).ready(function(){
     $(window).scroll(function(){
         if(this.scrollY > 20){
