@@ -39,7 +39,7 @@
             $texto = "DADOS PRECISAM SER INSERIDOS";
         }
         }else{
-        include_once("conexao.php");
+        include_once("/api/conexao.php");
         $_nome      = $_POST['nome'];
         $_cpf       = $_POST['cpf'];
         $_email     = $_POST['email'];
@@ -156,7 +156,7 @@
                                            $erro = $stmt->error;
                                            echo $erro;
                                        }else{
-                                        header("Location:medico.php");
+                                        header("Location:/api/medico.php");
                                        }
                                     }else if($tipoUsu=='paciente'){
                                         $senha = md5($_POST['senha']);
@@ -168,7 +168,7 @@
                                             $erro = $stmt->error;
                                             echo $erro;
                                         }else{
-                                            header("Location:homepage2.php");
+                                            header("Location:/api/homepage2.php");
                                         }
                                     }
                             
@@ -190,7 +190,7 @@
 ?>
 <!----------------------------------COMEÇO DO LOGIN  ------------------------------------------------>
 <?php
-    include 'conexao.php';
+    include '/api/conexao.php';
 
     $email    = "";
     $senha    = "";
@@ -208,14 +208,14 @@
             if(mysqli_num_rows($verifica)<=0){
                 echo "<script language='javascript' type='text/javascript'>
                 alert('Login incorreto');window.location
-                .href='cadastro.php';</script>";
+                .href='/api/cadastro.php';</script>";
                 die();
 
             }else{
                 $aux = $verifica->fetch_assoc();
                 setcookie('cpf',$aux['cpf'],(time()+3600)*5);
                 setcookie("email",$email);
-                header("Location:homepage2.php");
+                header("Location:/api/homepage2.php");
             }
 
 //            <!----------------------------------COMEÇO DO LOGIN(MEDICO)  ------------------------------------------------>
@@ -235,13 +235,13 @@
             // .href='rSenha.php?email=".$aux["email"]."';</script>";
             echo"<script language='javascript' type='text/javascript'>
             alert('Login incorreto $senha');window.location
-            .href='cadastro.php';</script>";
+            .href='/api/cadastro.php';</script>";
             die();
         }else if($senha == 'SGVscE1lbW9yeQ=='){
             $aux = $verifica->fetch_assoc();
             setcookie('cpf',$aux['cpf'],(time()+3600)*5);
             setcookie("email",$email);
-            header("Location:medico.php");
+            header("Location:/api/medico.php");
                 }else{
                     echo "erroo!!!";
                 }
@@ -329,13 +329,13 @@ body{
                 <div class="menucima">
                     <ul>
                         <li>
-                            <a href="homepage.php">Pagina Inícial</a>
+                            <a href="/api/homepage.php">Pagina Inícial</a>
                         </li>
                         <li>
-                            <a href=" cadastro.php">Cadastro/Login</a>
+                            <a href="/api/cadastro.php">Cadastro/Login</a>
                         </li>
                         <li>
-                            <a href=" paciente.php">Paciente</a>
+                            <a href="/api/paciente.php">Paciente</a>
                         </li>
                     </ul>
                 </div>

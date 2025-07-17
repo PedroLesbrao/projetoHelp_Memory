@@ -8,7 +8,7 @@
 
     </head>
     <body>
-        <form method="GET" action="pesquisa.php">
+        <form method="GET" action="/api/pesquisa.php">
             <div id="pesquisar">
             <input type="text" id="pesqui" name="pesquisar" placeholder="PESQUISAR">
             <button type="submit" id="botaoPesq" value="PESQUISAR">OK</button>
@@ -19,10 +19,10 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="homepage.php">Pagina Inícial</a>
+                        <a href="/api/homepage.php">Pagina Inícial</a>
                     </li>
                     <li>
-                        <a href=" cadastro.php">Cadastro/Login</a>
+                        <a href=" /api/cadastro.php">Cadastro/Login</a>
                     </li>
                     
                 </ul>
@@ -32,7 +32,7 @@
  
         <?php
                     
-            include 'conexao.php';
+            include '/api/conexao.php';
             session_start();
            
            
@@ -95,7 +95,7 @@
         <br>
         <div class="btnRelatorio">
             <br><br>
-        <a  class="btn btn-primary btn-block" href="lastest-users.php" target="_blank" role="button">VER RELATORIO</a>
+        <a  class="btn btn-primary btn-block" href="/api/lastest-users.php" target="_blank" role="button">VER RELATORIO</a>
         </div>
      <br><br>
     </body>

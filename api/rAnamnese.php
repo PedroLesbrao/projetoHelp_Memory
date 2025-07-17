@@ -1,5 +1,5 @@
 <?php
-    include 'conexao.php';
+    include '/api/conexao.php';
     session_start();
     //mysqli_set_charset($conexao,'utf8');
 
@@ -32,7 +32,7 @@
 
         while($aux = $resultado->fetch_assoc()){  
            echo"<script language='javascript' type='text/javascript'>window.location
-           .href='consulta.php?codUsu=".$aux["codUsu"]."';</script>";
+           .href='/api/consulta.php?codUsu=".$aux["codUsu"]."';</script>";
         }
        
       

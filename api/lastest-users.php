@@ -31,7 +31,7 @@ $pdf -> Cell(8,1,'Email',1,0,'C',TRUE);
 $pdf -> Cell(4,1,'Data',1,1,'C',TRUE);
 
 //Conexão e pesquisa no Banco de dados
-include_once("conexao.php");
+include_once("/api/conexao.php");
 
 $sql = "SELECT nome, create_date, email FROM usuario ORDER BY create_date DESC";
 $select = mysqli_query($conexao, $sql) or die(mysqli_error());

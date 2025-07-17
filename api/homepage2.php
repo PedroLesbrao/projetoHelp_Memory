@@ -23,9 +23,9 @@
         <div class="max-width">
             <div class="logo"><a href="#">Help<span>Memory</span></a></div>
             <ul class="menu">
-                <li><a href="homepage.php" class="menu-btn">Página Inicial</a></li>
-                <li><a href="cadastro.php" class="menu-btn">Cadastro/login</a></li>
-                <li><a href="Paciente.php" class="menu-btn">Paciente</a></li>                
+                <li><a href="/api/homepage.php" class="menu-btn">Página Inicial</a></li>
+                <li><a href="/api/cadastro.php" class="menu-btn">Cadastro/login</a></li>
+                <li><a href="/api/Paciente.php" class="menu-btn">Paciente</a></li>                
                 <li><a href="#home" class="menu-btn">Casa</a></li>
                 <li><a href="#about" class="menu-btn">Sobre mim</a></li>
                 <li><a href="#services" class="menu-btn">Serviços</a></li>
