@@ -1,5 +1,5 @@
 <?php
-    include 'conexao.php';
+    include '/conexao.php';
     session_start();
 
     if(!empty($_POST["tipoUsu"]) && !empty($_POST["senha"])){
@@ -39,7 +39,7 @@
             $texto = "DADOS PRECISAM SER INSERIDOS";
         }
         }else{
-        include_once("/api/conexao.php");
+        include_once("/conexao.php");
         $_nome      = $_POST['nome'];
         $_cpf       = $_POST['cpf'];
         $_email     = $_POST['email'];
@@ -156,7 +156,7 @@
                                            $erro = $stmt->error;
                                            echo $erro;
                                        }else{
-                                        header("Location:/api/medico.php");
+                                        header("Location:/medico.php");
                                        }
                                     }else if($tipoUsu=='paciente'){
                                         $senha = md5($_POST['senha']);
@@ -168,7 +168,7 @@
                                             $erro = $stmt->error;
                                             echo $erro;
                                         }else{
-                                            header("Location:/api/homepage2.php");
+                                            header("Location:/homepage2.php");
                                         }
                                     }
                             
@@ -190,7 +190,7 @@
 ?>
 <!----------------------------------COMEÇO DO LOGIN  ------------------------------------------------>
 <?php
-    include '/api/conexao.php';
+    include '/conexao.php';
 
     $email    = "";
     $senha    = "";
@@ -208,14 +208,14 @@
             if(mysqli_num_rows($verifica)<=0){
                 echo "<script language='javascript' type='text/javascript'>
                 alert('Login incorreto');window.location
-                .href='/api/cadastro.php';</script>";
+                .href='/cadastro.php';</script>";
                 die();
 
             }else{
                 $aux = $verifica->fetch_assoc();
                 setcookie('cpf',$aux['cpf'],(time()+3600)*5);
                 setcookie("email",$email);
-                header("Location:/api/homepage2.php");
+                header("Location:/homepage2.php");
             }
 
 //            <!----------------------------------COMEÇO DO LOGIN(MEDICO)  ------------------------------------------------>
@@ -235,13 +235,13 @@
             // .href='rSenha.php?email=".$aux["email"]."';</script>";
             echo"<script language='javascript' type='text/javascript'>
             alert('Login incorreto $senha');window.location
-            .href='/api/cadastro.php';</script>";
+            .href='/cadastro.php';</script>";
             die();
         }else if($senha == 'SGVscE1lbW9yeQ=='){
             $aux = $verifica->fetch_assoc();
             setcookie('cpf',$aux['cpf'],(time()+3600)*5);
             setcookie("email",$email);
-            header("Location:/api/medico.php");
+            header("Location:/medico.php");
                 }else{
                     echo "erroo!!!";
                 }
@@ -329,13 +329,13 @@ body{
                 <div class="menucima">
                     <ul>
                         <li>
-                            <a href="/api/homepage.php">Pagina Inícial</a>
+                            <a href="/homepage.php">Pagina Inícial</a>
                         </li>
                         <li>
-                            <a href="/api/cadastro.php">Cadastro/Login</a>
+                            <a href="/cadastro.php">Cadastro/Login</a>
                         </li>
                         <li>
-                            <a href="/api/paciente.php">Paciente</a>
+                            <a href="/paciente.php">Paciente</a>
                         </li>
                     </ul>
                 </div>
@@ -357,7 +357,7 @@ body{
                 <p class="description description-second"> Use seu e-mail para o registro:</p>
                 <p class="description description-second"> Caso seja um médico é necessario fazer o cadastro pelo site</p>
 
-                <form enctype="multipart/form-data" class="form" method="POST" action="cadastro.php"><!-- inicio formulario (cadastro)  -->
+                <form enctype="multipart/form-data" class="form" method="POST" action="/cadastro.php"><!-- inicio formulario (cadastro)  -->
 
                     <label class="label-input" for="">
                     <input type="text" placeholder="Nome" name="nome" id="nome" style="text-transform: capitalize;" required>
@@ -428,7 +428,7 @@ body{
 
                 <p class="description description-second">Use seu e-mail para o login:</p><!-- inicio do formulario (login) -->
              
-                <form class="form" method="post" action="cadastro.php">
+                <form class="form" method="post" action="/cadastro.php">
                 
                     <label class="label-input" for="">
                     <input type="email" placeholder="Email" id="email" name="email" value="<?=$email?>" required>

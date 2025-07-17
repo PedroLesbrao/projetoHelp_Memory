@@ -1,5 +1,5 @@
 <?php
-    include '/api/conexao.php';
+    include '/conexao.php';
     session_start();
 
     if(isset($_GET["codUsu"]) && is_numeric($_GET["codUsu"])){
@@ -17,7 +17,7 @@
             $stmt->execute();
 
 
-            header ("Location:/api/medico.php");
+            header ("Location:/medico.php");
             exit;
 
         }

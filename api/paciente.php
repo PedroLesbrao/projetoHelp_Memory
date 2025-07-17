@@ -1,5 +1,5 @@
 <?php
-    include '/api/conexao.php';
+    include '/conexao.php';
     session_start();
 ?>
 <!DOCTYPE html>
@@ -19,13 +19,13 @@
             <div class="menu">
                 <ul>
                     <li>
-                        <a href="/api/omepage2.php">HomePage</a>
+                        <a href="/omepage2.php">HomePage</a>
                     </li>
                     <li>
-                        <a href="/api/cadastro2.php">Cadastro/Login</a>
+                        <a href="/cadastro2.php">Cadastro/Login</a>
                     </li>
                     <li>
-                        <a href="/api/paciente.php">Paciente</a>
+                        <a href="/paciente.php">Paciente</a>
                     </li>
                 </ul>
             </div>

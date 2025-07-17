@@ -1,5 +1,5 @@
 <?php 
-include '/api/conexao.php';
+include '/conexao.php';
 session_start();
 ?>
 <?php
@@ -52,11 +52,11 @@ session_start();
 
       echo "       </table>";
       echo "<br><br>";
-      echo "<a class='btn' href='/api/consulta.php?codUsu=".$aux['codUsu']."'>Ver Paciente</a>";
+      echo "<a class='btn' href='/consulta.php?codUsu=".$aux['codUsu']."'>Ver Paciente</a>";
 
       echo "&nbsp &nbsp";
 
-      echo "<a class='btn' href='/api/deleta.php?codUsu=".$aux['codUsu']."'>Apagar Paciente</a>";
+      echo "<a class='btn' href='/deleta.php?codUsu=".$aux['codUsu']."'>Apagar Paciente</a>";
       echo "<br><br>";
       echo "</fieldset>";    
  }

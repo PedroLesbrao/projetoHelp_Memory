@@ -7,7 +7,7 @@
         $options->set('isRemoteEnabled', TRUE);
         $dompdf = new Dompdf($options);
         ob_start();
-        require __DIR__."/api/dex.php";
+        require __DIR__."/dex.php";
         
         $dompdf->loadHtml(ob_get_clean());
         $dompdf->render();

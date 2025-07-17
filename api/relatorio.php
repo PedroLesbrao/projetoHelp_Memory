@@ -1,5 +1,5 @@
 <?php
-    include '/api/conexao.php';
+    include '/conexao.php';
     session_start();
 
     $historico    = "";

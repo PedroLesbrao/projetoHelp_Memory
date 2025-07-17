@@ -1,5 +1,5 @@
 <?php
-    include '/api/conexao.php';
+    include '/conexao.php';
 
     $resultado = mysqli_query($conexao,"SELECT * FROM usuario WHERE codUsu=".$_GET["codUsu"]."");
 
@@ -8,9 +8,9 @@
         echo "<br><br><br>";
         echo "<label>Você deseje APAGAR o paciente?</label>";
         echo "<br><br>";
-        echo "<a class='botao' href='/api/deleta2.php?codUsu=".$_GET['codUsu']."'>Apagar</a>";
+        echo "<a class='botao' href='/deleta2.php?codUsu=".$_GET['codUsu']."'>Apagar</a>";
         echo "&nbsp &nbsp &nbsp &nbsp";
-        echo "<a class='botao' href='/api/medico.php?codUsu='".$aux["codUsu"]."'>Cancelar</a>";
+        echo "<a class='botao' href='/medico.php?codUsu='".$aux["codUsu"]."'>Cancelar</a>";
         echo "<br><br><br>";
         echo "</div>";
     }

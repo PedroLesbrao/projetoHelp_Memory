@@ -1,5 +1,5 @@
 <?php
-    include '/api/conexao.php';
+    include '/conexao.php';
     session_start();
 ?>
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
                 echo "              </td>";
                 echo "          </tr>";
                 echo "       </table>";
-                echo "<a class='linkFicha' href='/api/edit.php?codUsu=".$_GET['codUsu']."'>Editar os Dados pessoais</a>";
+                echo "<a class='linkFicha' href='/edit.php?codUsu=".$_GET['codUsu']."'>Editar os Dados pessoais</a>";
                 echo "</fieldset>";
             }
             ////////////////////////////////////FIM DOS DADOS PESSOAIS /////////////////////////////////////
@@ -103,9 +103,9 @@
 
                 echo "       </table>";
 
-                echo "<a class='linkFicha' href='/api/anamnese.php?codUsu=".$_GET['codUsu']."'>Fazer Anamnese</a> &nbsp &nbsp";
+                echo "<a class='linkFicha' href='/anamnese.php?codUsu=".$_GET['codUsu']."'>Fazer Anamnese</a> &nbsp &nbsp";
 
-                echo "<a class='linkFicha' href='/api/rAnamnese.php?codUsu=".$_GET['codUsu']."'>Editar a Anamnese</a><br>";
+                echo "<a class='linkFicha' href='/rAnamnese.php?codUsu=".$_GET['codUsu']."'>Editar a Anamnese</a><br>";
 
 
                 ////////////////////////////// FIM DA ANAMNESE /////////////////////////////
@@ -157,11 +157,11 @@
 
                 echo "       </table>";
 
-                echo "<a class='linkFicha' href='/api/relatorio.php?codUsu=".$_GET['codUsu']."'>Fazer o Relatório</a> &nbsp &nbsp";
+                echo "<a class='linkFicha' href='/relatorio.php?codUsu=".$_GET['codUsu']."'>Fazer o Relatório</a> &nbsp &nbsp";
 
-                echo "<a  class='linkFicha' href='/api/rRelatorio.php?codUsu=".$_GET['codUsu']."'>Editar o Relatório</a>";
+                echo "<a  class='linkFicha' href='/rRelatorio.php?codUsu=".$_GET['codUsu']."'>Editar o Relatório</a>";
                 echo " <br><br>";
-                echo "<a  id='linkVolta' href='/api/medico.php'>Voltar</a>";
+                echo "<a  id='linkVolta' href='/medico.php'>Voltar</a>";
 
                 ////////////////////////////// FIM DO HISTORICO /////////////////////////////
                 echo "</fieldset>";

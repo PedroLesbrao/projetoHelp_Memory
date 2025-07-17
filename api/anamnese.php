@@ -1,5 +1,5 @@
 <?php
-    include 'conexao.php';
+    include '/conexao.php';
     session_start();
 
 
@@ -35,7 +35,7 @@
             
                     while($aux = $resultado->fetch_assoc()){  
                         echo"<script language='javascript' type='text/javascript'>window.location
-                        .href='consulta.php?codUsu=".$aux["codUsu"]."';</script>";
+                        .href='/consulta.php?codUsu=".$aux["codUsu"]."';</script>";
                     }
                     exit;
                 }
