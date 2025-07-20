@@ -8,6 +8,11 @@
    {
       "src": "^/([^/]+)\\.php$",
       "dest": "/api/$1.php"
+    },
+    
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
     }
   ]
 }
