@@ -1,6 +1,6 @@
 <?php
-    include __DIR__ . '/conexao.php';
-    session_start();
+     session_start();
+     include __DIR__ . '/conexao.php';
 
     if(!empty($_POST["tipoUsu"]) && !empty($_POST["senha"])){
 
@@ -190,7 +190,8 @@
 ?>
 <!----------------------------------COMEÇO DO LOGIN  ------------------------------------------------>
 <?php
-    include '/conexao.php';
+     session_start();
+   include __DIR__ . '/conexao.php';
 
     $email    = "";
     $senha    = "";

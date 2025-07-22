@@ -1,6 +1,7 @@
 <?php
+   session_start();
    include __DIR__ . '/conexao.php';
-    session_start();
+    
 
 
     $altura        = "";

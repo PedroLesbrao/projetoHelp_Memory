@@ -1,6 +1,6 @@
 <?php 
-include __DIR__ . '/conexao.php';
-session_start();
+ session_start();
+ include __DIR__ . '/conexao.php';
 ?>
 <?php
       $pesquisar = "";
