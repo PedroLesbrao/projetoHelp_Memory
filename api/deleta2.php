@@ -1,5 +1,5 @@
 <?php
-    include '/conexao.php';
+    include __DIR__ . '/conexao.php';
     session_start();
 
     if(isset($_GET["codUsu"]) && is_numeric($_GET["codUsu"])){

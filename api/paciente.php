@@ -1,5 +1,5 @@
 <?php
-    include '/conexao.php';
+    include __DIR__ . '/conexao.php';
     session_start();
 ?>
 <!DOCTYPE html>

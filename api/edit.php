@@ -1,5 +1,5 @@
 <?php
-    include '/conexao.php';
+    include __DIR__ . '/conexao.php';
     //mysqli_set_charset($conexao,'utf8');
     session_start();
 
