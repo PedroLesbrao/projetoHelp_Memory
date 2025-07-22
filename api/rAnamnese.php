@@ -1,6 +1,6 @@
 <?php
-     session_start();
-   include __DIR__ . '/conexao.php';
+    include __DIR__ . '/conexao.php';
+    session_start();
     //mysqli_set_charset($conexao,'utf8');
 
   $codUsu        = -1;

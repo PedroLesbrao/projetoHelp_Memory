@@ -1,6 +1,6 @@
 <?php
-     session_start();
-   include __DIR__ . '/conexao.php';
+    include __DIR__ . '/conexao.php';
+    session_start();
 
     if(!empty($_POST["tipoUsu"]) && !empty($_POST["senha"])){
 

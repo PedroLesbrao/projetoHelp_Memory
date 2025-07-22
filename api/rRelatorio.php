@@ -1,6 +1,7 @@
 <?php
-     session_start();
-   include __DIR__ . '/conexao.php';
+    include __DIR__ . '/conexao.php';
+    //mysqli_set_charset($conexao,'utf8');
+    session_start();
 
     $historico    = "";
     $peso         = "";

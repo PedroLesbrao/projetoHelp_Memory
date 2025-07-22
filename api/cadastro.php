@@ -190,8 +190,7 @@
 ?>
 <!----------------------------------COMEÇO DO LOGIN  ------------------------------------------------>
 <?php
-     session_start();
-   include __DIR__ . '/conexao.php';
+    include '/conexao.php';
 
     $email    = "";
     $senha    = "";

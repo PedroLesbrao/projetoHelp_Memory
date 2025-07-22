@@ -1,6 +1,5 @@
 <?php
-     session_start();
-   include __DIR__ . '/conexao.php';
+include __DIR__ . '/conexao.php';
 
     $resultado = mysqli_query($conexao,"SELECT * FROM usuario WHERE codUsu=".$_GET["codUsu"]."");
 
